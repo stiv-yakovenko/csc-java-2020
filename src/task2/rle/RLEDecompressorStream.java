@@ -1,12 +1,11 @@
 package task2.rle;
 
-interface ByteReader {
-    int read(byte b); // returns -1 on EOF
-}
+
+import java.io.InputStream;
 
 public class RLEDecompressorStream {
-    ByteReader byteReader;
-    RLEDecompressorStream(ByteReader b){
+    InputStream byteReader;
+    public RLEDecompressorStream(InputStream b){
         byteReader =b;
     }
     public int read(){ // should return -1 on EOF

@@ -1,22 +1,19 @@
 package task2.rle;
 
 import java.io.DataInputStream;
+import java.io.IOException;
 import java.io.InputStream;
-interface ByteWriter {
-    void write(byte b);
-    void end();
-}
+import java.io.OutputStream;
+
 public class RLECompressorStream {
-    ByteWriter byteWriter;
-    RLECompressorStream(ByteWriter b){
-        byteWriter =b;
+    OutputStream os;
+    public RLECompressorStream(OutputStream oss){
+        os = oss;
     }
-    public void flush(){
-        byteWriter.end();
+    public void flush() throws IOException {
+        os.close();
     }
     public void consume(byte b){
-        byteWriter.write((byte)22);
-        byteWriter.write((byte)12);
         throw new RuntimeException("not implemented yet");
     }
 }
