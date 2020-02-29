@@ -18,8 +18,8 @@ public class ArraysTest {
     @Test
     public void testSort(){
         int[]arr={7,6,2,8};
-        int[]arr0={2,6,7,7};
-        Main.sort(arr);
+        int[]arr0={2,6,7,8};
+        Main.bubbleSort(arr);
         Assert.assertTrue(Arrays.equals(arr, arr0));
     }
     @Test
@@ -30,22 +30,22 @@ public class ArraysTest {
     @Test
     public void testMax(){
         int[]arr={7,6,2,8};
-        Assert.assertEquals(Main.min(arr),8);
+        Assert.assertEquals(Main.max(arr),8);
     }
     @Test
     public void testAvg(){
         int[]arr={1,2,3};
-        Assert.assertEquals(Main.avg(arr),2.0,1E-20);
+        Assert.assertEquals(Main.average(arr),2.0,1E-20);
     }
     @Test
     public void testMedian(){
         int[]arr={1,2,3};
-        Assert.assertEquals(Main.avg(arr),2.0,1E-20);
+        Assert.assertEquals(Main.average(arr),2.0,1E-20);
     }
     @Test
     public void testLongestGrowing(){
         int[]arr={1,2,3,2,1,3,1,2,6,7,8,9,10,11,0,-1};
         int[]res={1,2,6,7,8,9,10,11};
-        Assert.assertTrue(Arrays.equals(Main.longestGrowing(arr),res));
+        Assert.assertTrue(Arrays.equals(Main.longestAscendingSubsequence(arr),res));
     }
 }
