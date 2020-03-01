@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/csc-java-2020.iml" filepath="$PROJECT_DIR$/csc-java-2020.iml" />
+      <module fileurl="file://$PROJECT_DIR$/task01.arrays/task01.arrays.iml" filepath="$PROJECT_DIR$/task01.arrays/task01.arrays.iml" />
+      <module fileurl="file://$PROJECT_DIR$/task02.capitalizator/task02.capitalizator.iml" filepath="$PROJECT_DIR$/task02.capitalizator/task02.capitalizator.iml" />
+      <module fileurl="file://$PROJECT_DIR$/task03.rle/task03.rle.iml" filepath="$PROJECT_DIR$/task03.rle/task03.rle.iml" />
+      <module fileurl="file://$PROJECT_DIR$/task04.deduplicator/task04.deduplicator.iml" filepath="$PROJECT_DIR$/task04.deduplicator/task04.deduplicator.iml" />
+      <module fileurl="file://$PROJECT_DIR$/task05.calculator/task05.calculator.iml" filepath="$PROJECT_DIR$/task05.calculator/task05.calculator.iml" />
+      <module fileurl="file://$PROJECT_DIR$/task06.bbs/task06.bbs.iml" filepath="$PROJECT_DIR$/task06.bbs/task06.bbs.iml" />
+    </modules>
+  </component>
+</project>

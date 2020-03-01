@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project>
+      
+  <modelVersion>4.0.0</modelVersion>
+      
+  <name>csc-java-2020</name>
+      
+  <artifactId>csc-java-2020</artifactId>
+      
+  <groupId>org.csc.nsk.java2020</groupId>
+      
+  <version>1.0.0-SNAPSHOT</version>
+      
+  <packaging>pom</packaging>
+
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <java.version>11</java.version>
+    <junit.version>4.13</junit.version>
+    <maven.compiler.plugin.version>3.8.0</maven.compiler.plugin.version>
+    <maven.jar.plugin.version>3.1.1</maven.jar.plugin.version>
+    <maven.surefire.plugin.version>2.22.1</maven.surefire.plugin.version>
+  </properties>
+
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <version>${maven.compiler.plugin.version}</version>
+        <configuration>
+          <source>${java.version}</source>
+          <target>${java.version}</target>
+          <showWarnings>true</showWarnings>
+          <showDeprecation>true</showDeprecation>
+        </configuration>
+      </plugin>
+
+      <plugin>
+        <artifactId>maven-surefire-plugin</artifactId>
+        <version>${maven.surefire.plugin.version}</version>
+      </plugin>
+    </plugins>
+
+    <resources>
+      <resource>
+        <directory>src/main/resources</directory>
+      </resource>
+    </resources>
+    <testResources>
+      <testResource>
+        <directory>src/test/resources</directory>
+      </testResource>
+    </testResources>
+  </build>
+
+  <dependencies>
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>4.13</version>
+    </dependency>
+  </dependencies>
+
+
+
+  <modules>
+        
+    <module>task01.arrays</module>
+    <module>task02.capitalizator</module>
+    <module>task03.rle</module>
+    <module>task04.deduplicator</module>
+    <module>task05.calculator</module>
+    <module>task06.bbs</module>
+  </modules>
+  
+</project>
