@@ -1,0 +1,5 @@
+org/csc/nsk/java2020/task03/rle/RLECompress.class
+org/csc/nsk/java2020/task03/rle/RLEDecompressorStream.class
+org/csc/nsk/java2020/task03/rle/RLEDecompress.class
+org/csc/nsk/java2020/task03/rle/RLECompressorStream.class
+org/csc/nsk/java2020/task03/rle/RunLengthEncoder.class
