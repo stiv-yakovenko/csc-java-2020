@@ -1,11 +1,14 @@
 package org.csc.nsk.java2020.task01.arrays;
 
-import java.util.Arrays;
+public final class Main {
 
-public class Main {
+    private Main() {
+    }
+
     /**
      * Перевернуть поданный на вход массив.
      *
+     * @param array массив элементов
      * @return массив с перевернутыми элементами
      */
     public static int[] reverse(final int[] array) {
@@ -15,6 +18,7 @@ public class Main {
     /**
      * Найти минимальный элемент элемент массива.
      *
+     * @param array массив элементов
      * @return минимальный элемент (в случае пустого массива - 0)
      */
     public static int min(final int[] array) {
@@ -25,6 +29,7 @@ public class Main {
     /**
      * Найти максимальный элемент в массива.
      *
+     * @param array массив элементов
      * @return максимальный элемент (в случае пустого массива - 0)
      */
     public static int max(final int[] array) {
@@ -35,6 +40,7 @@ public class Main {
     /**
      * Вычислить среднее значение элементов массива.
      *
+     * @param array массив элементов
      * @return среднее значение (в случае пустого массива - 0)
      */
     public static double average(final int[] array) {
@@ -43,8 +49,9 @@ public class Main {
 
     /**
      * Вычислить медианный элемент массива.
-     * @see <a href="en.wikipedia.org/wiki/Median</a>
+     * @see <a href="en.wikipedia.org/wiki/Median"/>
      *
+     * @param array массив элементов
      * @return среднее значение (в случае пустого массива - 0)
      */
     public static double median(final int[] array) {
@@ -53,7 +60,7 @@ public class Main {
 
     /**
      * Сортировка массива пузырьком. Производится in-place.
-     * @see <a href="en.wikipedia.org/wiki/Bubble_sort</a>
+     * @see <a href="en.wikipedia.org/wiki/Bubble_sort"/>
      *
      * @param array массив для сортировки
      */

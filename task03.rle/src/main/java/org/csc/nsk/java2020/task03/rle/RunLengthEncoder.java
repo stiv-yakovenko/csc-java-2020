@@ -5,6 +5,7 @@ import java.util.logging.Logger;
 public class RunLengthEncoder {
 
     public static void main(String... args) {
-        Logger logger=Logger.getLogger(RunLengthEncoder.class.getName());
-        logger.info("This is a module-using Hello World!");    }
+        Logger logger = Logger.getLogger(RunLengthEncoder.class.getName());
+        logger.info("This is a module-using Hello World!");
+    }
 }

@@ -1,7 +1,8 @@
 package org.csc.nsk.java2020.task02.capitalizator;
 
-public class Capitalizator {
-    static public String capitalize(String s){
+public final class Capitalizator {
+
+    public static String capitalize(String s) {
         return s;
     }
 }

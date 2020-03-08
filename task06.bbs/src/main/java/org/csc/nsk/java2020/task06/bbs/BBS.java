@@ -8,8 +8,10 @@ import java.net.ServerSocket;
 import java.net.Socket;
 
 public class BBS {
+    private static final int SERVER_PORT = 8089;
+
     public void start() throws IOException {
-        ServerSocket serverSocket = new ServerSocket(8089);
+        ServerSocket serverSocket = new ServerSocket(SERVER_PORT);
         Socket clientSocket = serverSocket.accept();
         PrintWriter out =
                 new PrintWriter(clientSocket.getOutputStream(), true);
