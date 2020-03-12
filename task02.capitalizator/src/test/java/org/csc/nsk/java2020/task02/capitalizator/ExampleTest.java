@@ -9,7 +9,7 @@ public class ExampleTest {
 
     @Test
     public void dumbAssertTest() {
-        Assert.assertEquals("s1",Capitalizator.capitalize("s1"));
+        Assert.assertEquals("S1",Capitalizator.capitalize("s1"));
     }
 
     @Test(expected = Exception.class)
